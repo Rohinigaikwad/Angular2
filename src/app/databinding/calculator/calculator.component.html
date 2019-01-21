@@ -1,22 +1,41 @@
 
+
 <div class="container">
-  <!--<h2>Simple Calculator in Angular 2 Using Databinding</h2>-->
-  <div class="card">
-    <div class="card-header text-center"><h3>Calculator</h3></div>
-      <div class="card-body">
-        <div class="form-group d-flex flex-row">
-          <input [(ngModel)]="num1" type="number" name="num1" class="form-control">
-          <input  [(ngModel)]="num2" type="number" name="num2" class="form-control">
-        </div>
-        <div class="d-flex flex-row justify-content-between">
-          <button class="btn btn-success" (click)="addition()">SUM</button>
-          <button class="btn btn-primary" (click)="subtract()">SUB</button>
-          <button class="btn btn-info" (click)="multi()">MUL</button>
-          <button class="btn btn-danger" (click)="divide()">DIVIDE</button>
-       </div>
-    </div>
-    <div class="card-footer text-center">
-      <h3>The result of {{num1}} and {{num2}} is {{result}}</h3>
-    </div>
-  </div>
+<table cellspacing="0">
+     <tr>
+       <td colspan="4">
+         <div class="top"><input type="text" value="{{result}}"></div>
+       </td>
+     </tr>
+     <tr>
+      <td> <button (click)="key('7')" class="btn btn-default btn-block">7</button></td>
+      <td> <button (click)="key('8')" class="btn btn-default btn-block">8</button></td>
+      <td> <button (click)="key('9')" class="btn btn-default btn-block">9</button></td>
+      <td>  <button (click)="key('+')" class="btn btn-default btn-block">+</button></td>
+     </tr>
+
+     <tr>
+        <td> <button (click)="key('4')" class="btn btn-default btn-block">4</button></td>
+        <td> <button (click)="key('5')" class="btn btn-default btn-block">5</button></td>
+        <td> <button (click)="key('6')" class="btn btn-default btn-block">6</button></td>
+        <td>  <button (click)="key('-')" class="btn btn-default btn-block">-</button></td>
+       </tr>
+       <tr>
+          <td> <button (click)="key('1')" class="btn btn-default btn-block">1</button></td>
+          <td> <button (click)="key('2')" class="btn btn-default btn-block">2</button></td>
+          <td> <button (click)="key('3')" class="btn btn-default btn-block">3</button></td>
+          <td>  <button (click)="key('*')" class="btn btn-default btn-block">*</button></td>
+         </tr>
+       <tr>
+          <td> <button (click)="key('0')" class="btn btn-default btn-block">0</button></td>
+          <td> <button (click)="key('(')" class="btn btn-default btn-block">(</button></td>
+          <td> <button (click)="key(')')" class="btn btn-default btn-block">)</button></td>
+          <td>  <button (click)="key('/')"class="btn btn-default btn-block">/</button></td>
+         </tr>
+         <tr>
+            <td> <button (click)="clear()" class="btn btn-danger btn-block">AC</button></td>
+            <td> <button (click)="key('.')" class="btn btn-default btn-block">.</button></td>
+            <td colspan="2"><button (click)="evaluate()" class="btn btn-default btn-block">=</button></td>
+         </tr>
+</table>
 </div>
