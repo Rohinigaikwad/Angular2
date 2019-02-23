@@ -23,7 +23,7 @@
  <div class="checkbox mb-3">
    <label>
      <!-- <input type="checkbox" value="remember-me"> <a href="rm">Remember me</a> using hyperlink page refresh is happen so angular provide one directive routerLink-->
-     <input type="checkbox" value="remember-me"> <a [routerLink]= "['rm']">Remember me</a>
+     <input type="checkbox" value="remember-me"> <a [routerLink]= "['rm','Android']" [queryParams]="{ from: 'login'}">Remember me</a>
    </label>
  </div>
  <button class="btn btn-lg btn-primary btn-block" (click)="onLogin(eml.value,pass.value)">Sign in</button>

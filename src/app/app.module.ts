@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RmComponent } from './rm/rm.component';
+import { AlertComponent } from './dashboard/alert/alert.component';
+import { JumboComponent } from './dashboard/jumbo/jumbo.component';
+import { StarterComponent } from './dashboard/starter/starter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RmComponent
+    RmComponent,
+    AlertComponent,
+    JumboComponent,
+    StarterComponent
   ],
   imports: [
     BrowserModule,

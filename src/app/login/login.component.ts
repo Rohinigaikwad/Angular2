@@ -15,7 +15,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   onLogin (eml: string, pass: string) {
-     this.router.navigate(['dash']);
+    // this.router.navigate(['dash', eml);   // 1st-Route path,Route Variable-same in rm
+     this.router.navigate(['dash', eml], {   // 2nd -is javascript object and to that object queryParams is the key
+       queryParams: {
+         ttl: 100,
+         tenant: 'codekul'
+       }
+    });
   }
 
 }
