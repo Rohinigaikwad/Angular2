@@ -12,3 +12,5 @@ export class ProtectGuard implements CanActivate {
     return true;
   }
 }
+
+// In new cloned repository.
