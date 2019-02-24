@@ -5,20 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { RmComponent } from './rm/rm.component';
+
 import { AlertComponent } from './dashboard/alert/alert.component';
 import { JumboComponent } from './dashboard/jumbo/jumbo.component';
 import { StarterComponent } from './dashboard/starter/starter.component';
+import { RmComponent } from './rm/rm.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    RmComponent,
     AlertComponent,
     JumboComponent,
-    StarterComponent
+    StarterComponent,
+    RmComponent,
   ],
   imports: [
     BrowserModule,

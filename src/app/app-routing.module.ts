@@ -13,7 +13,7 @@ import { ProtectGuard } from './dashboard/protect.guard';
 const dashRoutes: Routes = [
   {path: 'starter', component: StarterComponent},
   {path: 'jumbo', component: JumboComponent},
-  {path: 'alert', component: AlertComponent}
+  {path: 'alert', component: AlertComponent},
 ];
 const routes: Routes = [
   { path: '', component: LoginComponent},
