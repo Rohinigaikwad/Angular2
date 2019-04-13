@@ -9,7 +9,7 @@ export class CustomPipe implements PipeTransform {
     let data = '';
     let fstch = value.charAt(0).toUpperCase();
     data = fstch + value.substr(1);
-    return data;
+    return data;      // no comment  tp only
   }
 
 }
