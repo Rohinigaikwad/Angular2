@@ -60,7 +60,7 @@ export class HttpComponent implements OnInit , OnDestroy {
     resObj => this.webDomain = resObj as WebDomain
   );
 
-   const usr = {} as User;
+   let  usr = {} as User;
    usr.name = 'android';
    usr.job = 'java';
   this.webService.saveUser(usr).subscribe(

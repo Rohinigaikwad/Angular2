@@ -14,11 +14,11 @@ import { FormsComponent } from './forms/forms.component';
 import { DataDrivenFormsComponent } from './forms/data-driven-forms/data-driven-forms.component';
 import { TemplateDrivenFormsComponent } from './forms/template-driven-forms/template-driven-forms.component';
 import { from } from 'rxjs';
-// import { HttpComponent } from './http/http.component';
-// import { HttpClientModule } from '@angular/common/http';
 import { PipesComponent } from './pipes/pipes.component';
 import { CustomPipe } from './pipes/custom.pipe';
 import { MobfltPipe } from './pipes/mobflt.pipe';
+import { HttpComponent } from './http/http.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -33,7 +33,7 @@ import { MobfltPipe } from './pipes/mobflt.pipe';
     FormsComponent,
     DataDrivenFormsComponent,
     TemplateDrivenFormsComponent,
-   // HttpComponent,
+    HttpComponent,
     PipesComponent,
    CustomPipe,
    MobfltPipe
@@ -43,7 +43,7 @@ import { MobfltPipe } from './pipes/mobflt.pipe';
     AppRoutingModule,
     FormsModule,         // template driven
     ReactiveFormsModule ,  // data driven
-   // HttpClientModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
